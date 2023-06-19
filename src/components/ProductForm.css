@@ -1,0 +1,97 @@
+/* .formProduct{
+    text-align: left;
+    background-color: white;
+    border-radius: 8px;
+    padding:20px 60px;
+    margin:50px 0px;
+}
+
+header{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+
+input{
+    margin:10px 0px;
+    padding:15px;
+    border : 1px solid gray;
+    border-radius:5px;
+}
+
+button{
+    width:100%;
+    padding:10px;
+    text-align: center;
+    background-color: rgb(172, 28, 172);
+    color:white;
+    border:none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    cursor:pointer
+}
+
+label{
+    color:grey;
+}
+.formInput{
+    display:flex;
+    flex-direction: column;
+    width: 280px;
+}
+
+span{
+    color:red;
+    font-size: 15px;
+    padding:3px;
+    display:none;
+}
+
+input:invalid[focused="true"]{
+    display: block;
+    border:1px solid red;
+}
+
+input:invalid[focused="true"] ~ span{
+    border:1px solid red;
+} */
+
+form {
+  background-color: white;
+  padding: 5px 80px;
+  border-radius: 8px;
+}
+
+.formInput {
+  display: flex;
+  flex-direction: column;
+}
+input {
+  margin: 10px;
+  padding: 10px 5px;
+  width:280px;
+  border:1px solid grey;
+  border-radius: 8px;
+}
+
+label {
+  text-align: left;
+  padding-left:10px ;
+  color:grey;
+}
+
+button{
+    width: 100%;
+    padding:10px;
+    margin-top:15px;
+    margin-bottom: 10px;
+    background-color: rgb(85, 30, 85);
+    color:white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor:pointer;
+    border:none;
+}

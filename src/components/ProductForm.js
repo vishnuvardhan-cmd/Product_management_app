@@ -1,41 +1,65 @@
-import React from "react";
-
+import React, { useState } from "react";
+import FormInput from "./FormInput";
+import "./ProductForm.css";
 const ProductForm = () => {
+  const [values, setValues] = useState({
+    name: "",
+    place: "",
+    type: "",
+    waranty: 0,
+  });
+
+  const inputs = [
+    {
+      id: 1,
+      name: "name",
+      palceholder: "Enter the name",
+      type: "text",
+      errormsg: "name should consists of atleast 1 -16 characters",
+      label: "Name",
+    },
+    {
+      id: 2,
+      name: "place",
+      palceholder: "Enter the place",
+      type: "text",
+      errormsg: "place should consists of atleast 1 -16 characters",
+      label: "Place",
+    },
+    {
+      id: 3,
+      name: "Type",
+      palceholder: "Enter the Type",
+      type: "text",
+      errormsg: "Type should consists of atleast 1 -16 characters",
+      label: "Type",
+    },
+    {
+      id: 4,
+      name: "waranty",
+      palceholder: "Enter the waranty",
+      type: "number",
+      errormsg: "waranty should consists of atleast 1 -16 characters",
+      label: "Waranty",
+    },
+  ];
+
+  const handleFormElements=(e)=>{
+    setValues({...values,[e.target.name]:e.target.value})
+  }
+
+  const handleForm=(e)=>{
+    e.preventDefault();
+    console.log(values)
+  }
   return (
-    <div style={{ textAlign: "center" }}>
-      <form
-        style={{
-          margin: "58px",
-          /* padding: 20px; */
-          border: "1px solid black",
-          borderRadius: "30px",
-        }}
-      >
-        <div
-          style={{
-            padding: "30px",
-          }}
-        >
-          <label style={{ paddingRight: "inherit" }}>Name</label>
-          <input
-            style={{ padding: "8px", borderRadius: "14px" }}
-            type="text"
-            placeholder="Enter the name"
-          />
-        </div>
-        <div>
-          <label>Place</label>
-          <input type="text" placeholder="Enter the place" />
-        </div>
-        <div>
-          <label>Type</label>
-          <input type="text" placeholder="Enter the type" />
-        </div>
-        <div>
-          <label>Waranty</label>
-          <input type="number" placeholder="Enter the waranty" />
-        </div>
-        <button type="submit">Submit</button>
+    <div>
+      <form onSubmit={handleForm}>
+      <h1>Product Details</h1>
+        {inputs.map((input) => (
+          <FormInput  {...input} value={values[input.name]} onChange={handleFormElements}/>
+        ))}
+        <button type="submit" >submit</button>
       </form>
     </div>
   );

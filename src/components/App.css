@@ -1,7 +1,19 @@
-/* .App {
+ .App {
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: purple;
 }
 
+.App{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: blueviolet;
+}
+/*
 .App-logo {
   height: 40vmin;
   pointer-events: none;
