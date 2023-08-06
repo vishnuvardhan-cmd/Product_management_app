@@ -1,18 +1,13 @@
- .App {
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background-color: purple;
-}
+ /* .App {
+  /* text-align: center; */
+  /* display: flex; */
+  /* align-items: center;
+  justify-content: center; */
+  /* height: 100vh; */
+  /* background-color: white; */
 
-.App{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: blueviolet;
-}
+
+
 /*
 .App-logo {
   height: 40vmin;

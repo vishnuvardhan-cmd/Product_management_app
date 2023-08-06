@@ -1,18 +1,27 @@
-import React from "react";
+import React,{useState} from "react";
 import "./ProductForm.css";
-const FormInput = ({ id, name, placeholder, errormsg, type, label ,value,onChange}) => {
+const FormInput = ({ id, name, placeholder, pattern,errormsg, type, label ,value,onChange}) => {
+
+  const [focused,setFocused]=useState(false)
+  const handleFocus=()=>{
+    setFocused(true)
+  }
   return (
-    <div className="formInput">
-      <label>{label}</label>
+    <div key={id} className="formInput">
+      <label >{label}</label>
       <input
-        key={id}
+     
         name={name}
         placeholder={placeholder}
         type={type}
         value={value}
         onChange={onChange}
+        pattern={pattern}
+        onBlur={handleFocus}
+        focused={focused.toString()}
         required
       />
+      <span>{errormsg}</span>
     </div>
   );
 };

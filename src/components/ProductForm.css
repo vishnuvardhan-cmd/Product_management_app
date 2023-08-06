@@ -58,15 +58,24 @@ input:invalid[focused="true"] ~ span{
     border:1px solid red;
 } */
 
+.adjustCenter{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+}
 form {
-  background-color: white;
+  background-color: purple;
   padding: 5px 80px;
   border-radius: 8px;
+  width:fit-content;
+ 
 }
 
 .formInput {
   display: flex;
   flex-direction: column;
+  
 }
 input {
   margin: 10px;
@@ -82,7 +91,7 @@ label {
   color:grey;
 }
 
-button{
+/* button{
     width: 100%;
     padding:10px;
     margin-top:15px;
@@ -94,4 +103,19 @@ button{
     border-radius: 8px;
     cursor:pointer;
     border:none;
+} */
+
+span{
+    color:red;
+    /* margin: 8px; */
+    font-size: 10px;
+    display: none;
+}
+
+input:invalid[focused="true"] ~ span{
+    display: block;
+}
+
+input:invalid[focused="true"] {
+   border-color: red;
 }
