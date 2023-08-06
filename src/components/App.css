@@ -1,17 +1,17 @@
  .App {
-  text-align: center;
+  /* text-align: center; */
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: purple;
+  /* background-color: purple; */
 }
 
 .App{
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: blueviolet;
+  /* background-color: blueviolet; */
 }
 /*
 .App-logo {

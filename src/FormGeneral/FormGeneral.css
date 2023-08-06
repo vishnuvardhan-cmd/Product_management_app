@@ -1,0 +1,63 @@
+.formGeneral{
+    
+}
+
+.inputFormGeneral{
+    padding: 15px;
+    border-radius: 21px;
+}
+
+.inputs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inputs:label{
+    text-align: left;
+}
+
+.formInput{
+    padding: 19px 76px;
+    background-color: aliceblue;
+    /* margin: 20px; */
+    border-radius: 24px;
+}
+
+h1{
+    color: lightslategrey;
+    margin-top: 0px;
+    text-align: center;
+    font-weight: bold;
+    font-family: cursive;
+}
+button{
+    width: 100%;
+    padding: 15px;
+    margin: 8px;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 13px;
+    background-color: cornflowerblue;
+    color: white;
+    text-transform: uppercase;
+    text-size-adjust: 35px;
+    font-size: initial;
+    font-weight:bold;
+}
+
+input{
+    padding: 15px;
+    margin: 6px;
+    border-radius: 8px;
+    border: 0px solid grey;
+}
+
+label{
+    text-align: left;
+    padding-right: 126px;
+    color: grey;
+    font-size: small;
+}
